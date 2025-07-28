@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OfferSecure - Offer Letter Verifier</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              '50': '#fff8e1',
+              '100': '#ffecb3',
+              '200': '#ffe082',
+              '300': '#ffd54f',
+              '400': '#ffca28',
+              '500': '#ffc107', // amber-500
+              '600': '#ffb300', // amber-600
+              '700': '#ffa000', // amber-700
+              '800': '#ff8f00', // amber-800
+              '900': '#ff6f00', // amber-900
+              '950': '#f55f00',
+            }
+          },
+          keyframes: {
+            fadeIn: {
+              'from': { opacity: 0, transform: 'translateY(10px)' },
+              'to': { opacity: 1, transform: 'translateY(0)' },
+            }
+          },
+          animation: {
+            'fade-in': 'fadeIn 0.5s ease-out forwards',
+          }
+        }
+      }
+    }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.11.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

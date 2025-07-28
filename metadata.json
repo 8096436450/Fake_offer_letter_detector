@@ -1,0 +1,5 @@
+{
+  "name": "OfferSecure - Offer Letter Verifier",
+  "description": "An AI-powered tool to help users verify if a job offer letter is genuine or a potential scam. Users can upload a file or paste the text of the offer letter for analysis.",
+  "requestFramePermissions": []
+}
